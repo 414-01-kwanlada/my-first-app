@@ -106,7 +106,6 @@ if st.session_state.get("is_ended", False):
 
 st.divider()
 st.write("นางสาวขวัญลดา อุดโน เลขที่ 1 ม.4/14")
-
 st.title("🎮 เกมเติมคำศัพท์ภาษาอังกฤษ")
 
 # 1. เพิ่มการกำหนดค่าเริ่มต้นใน session_state ans3_val และ ans4_val
