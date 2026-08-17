@@ -93,7 +93,12 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
         st.rerun()
 
     time.sleep(1)
-  st.rerun()
+    # 4. ปุ่มส่งคำตอบ
+if "start" in st.session_state and not st.session_state.get("is_ended", False):
+    if st.button("📩 ส่งคำตอบ"):
+        st.session_state.is_ended = True
+        time.sleep(1)
+        st.rerun()
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
@@ -101,6 +106,3 @@ if st.session_state.get("is_ended", False):
 
 st.divider()
 st.write("นางสาวขวัญลดา อุดโน เลขที่ 1 ม.4/14")
-
-
-
